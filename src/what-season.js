@@ -15,7 +15,7 @@ function getSeason(date) {
   if (!arguments.length) 
   return 'Unable to determine the time of year!';
   if (!(date instanceof Date) || date.hasOwnProperty('getMonth') || date.hasOwnProperty('toString')) {  //instanceof проверяет принадлежит ли объект к определенному классу
-    throw new Error('Invalid date');
+    throw new Error('Invalid date!');
   }
   const month = date.getMonth();
   if (month < 2 || month === 11) 
