@@ -24,7 +24,7 @@ function repeater(str, options) {
   let additionSeparator = options.additionSeparator !== undefined ? options.additionSeparator : '|';
   let additionFragment = '';
 
-  if('addiction' in options) {
+  if('addition' in options) {
     for (let i = 0; i < additionRepeatTimes; i++) {
       if (i > 0) {
         additionFragment += `${additionSeparator}${addition}`;
