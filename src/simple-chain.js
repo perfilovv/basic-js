@@ -20,7 +20,7 @@ const chainMaker = {
       this.values = [];
       throw new Error('You can\'t remove incorrect link!');
     }
-    this.values = this.values.filter(i => i != position -1);
+    this.values = this.values.filter((item, i) => i != position -1);
     return this;
   },
   reverseChain() {
