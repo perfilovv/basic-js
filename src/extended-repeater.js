@@ -20,7 +20,8 @@ function repeater(str, options) {
   let repeatTimes = options.repeatTimes ? options.repeatTimes : 1;
   let separator = options.separator !== undefined ? options.separator : '+';
   let addition = options.addition !== undefined ? options.addition : '';
-  let additionRepeatTimes = options.additionRepeatTimes !== undefined ? options.additionRepeatTimes : 1;
+  let additionRepeatTimes = options.additionRepeatTimes ? options.additionRepeatTimes : 1;
+  let additionSeparator = options.additionSeparator !== undefined ? options.additionSeparator : '|';
   let additionFragment = '';
 
   if('addiction' in options) {

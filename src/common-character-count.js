@@ -31,7 +31,7 @@ function getCommonCharacterCount(s1, s2) {
      }
    }
    let values = Object.values(common);
-   values = values.reduce((previous,current) => previous + current);
+   values = values.reduce((previous,current) => previous + current, 0);
    return values;
 }
 
