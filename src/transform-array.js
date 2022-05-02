@@ -20,7 +20,7 @@ function transform(arr) {
   }
   for (let i = 0; i < arr.length; i++) {
     if (arr[i] === '--discard-prev') {
-      arr[i - 1] && newArr.pop();
+      arr[i - 1] && newArr.pop(); //pop удаляет последний элемент из массива и возвращает его значение
     } else if (arr[i] === '--discard-next') {
       arr[i + 1] && i++ && newArr.push('remove');
     } else if (arr[i] === '--double-prev') {
